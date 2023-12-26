@@ -12,7 +12,7 @@ function App() {
         iconName="mdi:human"
         iconSize={40}
         // iconBackgroundColor="green"
-        iconPlace="left"
+        iconPlace="right"
         rounded
         tooltipPlace="top"
         tooltipText="ini tool"

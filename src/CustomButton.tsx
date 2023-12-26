@@ -37,16 +37,13 @@ export default function CustomButton({
     large: 'text-lg px-6 py-6',
   }
 
-  const background: Record<Props['backgroundColor'], string> = {
-    red: 'bg-red-500',
-    blue: 'bg-blue-500',
-    green: 'bg-green-500',
+  const background = {
+    red: 'bg-red-500 hover:bg-red-700 transform transition-all',
+    blue: 'bg-blue-500 hover:bg-blue-700 transform transition-all',
+    green: 'bg-green-500 hover:bg-green-700 transform transition-all',
   }
 
-  const backgroundIcon: Record<
-    NonNullable<Props['iconBackgroundColor']>,
-    string
-  > = {
+  const backgroundIcon = {
     red: 'bg-red-500',
     blue: 'bg-blue-500',
     green: 'bg-green-500',
