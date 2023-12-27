@@ -32,9 +32,9 @@ export default function CustomButton({
   size,
 }: Props) {
   const sizeButton = {
-    small: 'text-sm px-4 py-2',
-    medium: 'text-base px-6 py-4',
-    large: 'text-lg px-6 py-6',
+    small: 'text-sm px-[10px] py-[5px]',
+    medium: 'text-base px-[12px] py-[6px] ',
+    large: 'text-lg px-4 py-[10px]',
   }
 
   const background = {
@@ -51,7 +51,9 @@ export default function CustomButton({
   }
 
   const btnColor = ` ${textColor === 'primary' ? 'text-black' : 'text-white'}`
-  const isIcon = `${iconName ? 'flex items-center space-x-4' : 'none'}`
+  const isIcon = `${
+    iconName ? 'flex items-center justify-between space-x-4' : 'none'
+  }`
   const isRounded = `${rounded ? 'rounded-lg' : 'rounded-none'}`
   const iconIsPlaced = `${
     iconPlace === 'left'
@@ -67,7 +69,7 @@ export default function CustomButton({
     <button
       className={`${
         background[backgroundColor]
-      } ${padding} ${btnColor} ${isIcon} ${isRounded} ${iconIsPlaced} justify-between relative group ${
+      } ${padding} ${btnColor} ${isIcon} ${isRounded} ${iconIsPlaced} relative group ${
         sizeButton[size!]
       }`}
     >
