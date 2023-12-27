@@ -14,7 +14,7 @@ export default function Tootltip({ tooltipPlace, tooltipText }: Props) {
               : '-translate-y-12'
           } hidden group-hover:flex justify-center items-center`}
         >
-          <div className="bg-red-600 rounded-md py-2 px-2">
+          <div className="bg-[#4b5563] rounded-md py-2 px-2">
             <p>{tooltipText}</p>
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function Tootltip({ tooltipPlace, tooltipText }: Props) {
               : 'translate-y-11'
           } hidden group-hover:flex justify-center items-center`}
         >
-          <div className="bg-red-600 rounded-md py-2 px-10">
+          <div className="bg-[#4b5563] rounded-md py-2 px-10">
             <p className="text-sm">{tooltipText}</p>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function Tootltip({ tooltipPlace, tooltipText }: Props) {
               : 'translate-x-32'
           } hidden group-hover:flex justify-center items-center`}
         >
-          <div className="bg-red-600 rounded-md py-2 px-10">
+          <div className="bg-[#4b5563] rounded-md py-2 px-10">
             <p className="text-sm">{tooltipText}</p>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function Tootltip({ tooltipPlace, tooltipText }: Props) {
               : '-translate-x-32'
           } hidden group-hover:flex justify-center items-center`}
         >
-          <div className="bg-red-600 rounded-md py-2 px-10">
+          <div className="bg-[#4b5563] rounded-md py-2 px-10">
             <p className="text-sm">{tooltipText}</p>
           </div>
         </div>
